@@ -11,11 +11,7 @@ const loadFile = (evt)=>{
     document.getElementById("submit").classList.remove("hidden")
 }
 
-<<<<<<< .merge_file_5R00ju
 const uploadToServer = (evt) =>{
-=======
-const uploadToServer = async (evt) =>{
->>>>>>> .merge_file_AHLQuh
         //best to commit it as such
         const formData = new FormData();
         formData.append('upload', file);
@@ -25,7 +21,6 @@ const uploadToServer = async (evt) =>{
         formData.append('Some_other_DB_filed','AnotherValue' )//etc
 
         console.log(formData);
-<<<<<<< .merge_file_5R00ju
         fetch('/image-uploaded', {
             method:'POST',
             body:formData
@@ -33,19 +28,6 @@ const uploadToServer = async (evt) =>{
         .then(resp=>resp.json())
         .then(data=>console.log(data))
         .catch(err=>console.log(error))
-=======
-        const response = await fetch('/image-uploaded', {
-            method:'POST',
-            body:formData
-        })
-
-
-        const data = await response.json()
-        
-        console.log(response)
-        
-       window.location.replace(data.url)
->>>>>>> .merge_file_AHLQuh
     
 }
 

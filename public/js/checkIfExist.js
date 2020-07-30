@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_AakB7P
-=======
-
->>>>>>> .merge_file_9csrAB
 
 // need to get db in here
 const checkIfExist = async (req, res, next)=> {
