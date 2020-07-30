@@ -9,11 +9,20 @@ const findUser = async (id, db) => {
 const prof = async (id, db) => {
     // findUser(id, db)
     let result = await db.one(`SELECT * FROM users WHERE id='${id}'`)
+<<<<<<< .merge_file_UmmhaF
     // let profile = 
     // // `
     // <div>${result.username}</div> 
     // <br><a href="/logout">Logout</a>`
 
+=======
+
+    // let profile = 
+    // // `
+    // <div>${result.username}</div> 
+    // <br><a href="/logout">Logout</a>`
+
+>>>>>>> .merge_file_4hVR2j
     return result
 }
 module.exports = prof
